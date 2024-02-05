@@ -96,6 +96,7 @@ a{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     color: #0c3c60;
+    text-align: center;
 }
 .last{
     display: flex;
@@ -284,7 +285,7 @@ a{
 }
 /* form*/
 .form {
-    height: 500px;
+    height: auto;
     width: auto;
     padding-bottom: 50px;
     display: flex;
@@ -307,16 +308,17 @@ a{
     justify-content: space-around;
 
  }
+
  .neft{
     padding: 10px;
-    width: 45%;
+    width: 90%;
     margin-top: 30px;
     margin-bottom: 30px;
 
  }
  .bell{
     padding: 10px;
-    width: 45%;
+    width: 90%;
     margin-top: 30px;
     margin-bottom: 30px;
  
@@ -332,18 +334,28 @@ a{
     outline: none;
  }
  .text{
-    width: 70%;
+    width: 90%;
 
  }
  .text2{
     width: 20%;
  }
- .btn{
-    margin-top: 0px;
- }
+
  .laast{
     color: white;
  }
+
+
+ @media (max-width: 700px){
+    .space{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+ }
+
+ /* footer */
+
 .footer{
     height: auto;
     background-color: #0c3c60;
@@ -351,17 +363,14 @@ a{
     justify-content: space-evenly;
     padding-top: 50px;
     padding-bottom: 50px;
-    flex-wrap: wrap;
 }
 .foot1{
     height: auto;
-    width: 25%;
+    width: 20%;
     color: white;
     line-height: 30px;
     flex-wrap: wrap;
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 .xyz{
     color: white;
@@ -371,12 +380,13 @@ a{
 }
 .foot3{
     height: auto;
-    width: 25%;
+    width: 20%;
     color: white;
     line-height: 30px;
     text-align: center;
+    font-size: 15px;
 }
 .fa-brands{
-    font-size: 30px;
+    font-size: 20px;
     padding-left: 40px;
 }
